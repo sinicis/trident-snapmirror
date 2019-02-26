@@ -1,0 +1,4 @@
+Host tridentsvm
+ Hostname svm-mgmt-lif.netapp.com
+ User k8svsadmin
+ IdentityFile ~/.ssh/id_rsa

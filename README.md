@@ -11,7 +11,10 @@ time="2019-02-26T09:36:29Z" level=error msg="Kubernetes frontend failed to delet
 
 The approach of my script is to check the logs of the trident pod, find these log entries, connect to svm and release the snapmirror relation. Trident itself will always retry failed tasks. Means the deletion of the volume does not be done within the script.
 
+### Supported versions and platforms
 Currently the script only supports k8s. I'm glad for any OpenShift addition.
+
+It is tested with Trident 18.07
 
 ## Pre-requisites
 There are several pre-requisites:
